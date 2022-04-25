@@ -1,7 +1,7 @@
 /*
 This program is designed to compare the contents of two linux directories and list out differences.
 ENVTOOL was written by ANDREW JONES as part of a coding competancy test for ANTIMATTER.
-This program was built in an Ubunto 20.04 VM using Visual Studio Code and GOlang.
+This program was built in an Ubuntu 20.04 VM using Visual Studio Code and GOlang.
 This is my first attempt at coding with GO.
 */
 
@@ -116,7 +116,7 @@ func findSliceNameDiff(strSlice1 []string, strSlice2 []string) []string {
 	for _, s1 := range strSlice1 { //for each element of the first slice...
 		s1 = s1[:len(s1)-34]
 		boolDiff := false
-		for _, s2 := range strSlice2 { //iterate through each elemeny of the second slice
+		for _, s2 := range strSlice2 { //iterate through each element of the second slice
 			s2 = s2[:len(s2)-34]
 			if s1 == s2 {
 				boolDiff = true
